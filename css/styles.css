@@ -10,11 +10,31 @@
 
 .TopBar {
     width: 100%;
-    height: 50px;
+    height: 65px;
     background: #1c1c24;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     position: fixed;
+}
+
+.Banner {
+    height: 40px;
+    transition: transform 0.35s ease;
+    padding: 5px;
+}
+
+.Banner:hover {
+    transform: scale(1.025);
+}
+
+.BackgroundImage {
+    width: 102%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
